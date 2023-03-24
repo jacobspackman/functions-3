@@ -50,9 +50,8 @@ let cities = [
     Make sure you save the code in a variable. Then, console.log the variable to see the new array.
 */
 
-const endWithL = cities.filter(name => {
-  
-})
+const endWithL = cities.filter(name => name.endsWith('i') )
+console.log(endWithL)
 
 
 ////////// PROBLEM 4 //////////
@@ -88,7 +87,15 @@ let fruits = [
     Note: do a google search on how to find an element's index of an array in Javascript. There is a built-in Javascript method that would help you find an index of an element in an array.
 */
 
-// CODE HERE
+fruits.forEach((element, index) => {
+  if(element.color === `red`){
+    console.log(`The fruit with index ${index} is an apple`)
+  }else if(element.color === 'orange'){
+    console.log(`The fruit with index ${index} is and orange`)
+  }else{
+    console.log(`The fruit with index ${index} is neither apple or orange.`)
+  }
+})
 
 
 
@@ -104,7 +111,10 @@ let fruits = [
 
 // COPY AND PASTE THE RESULT FROM YOUR CONSOLE (NODE CONSOLE IS YOUR TERMINAL) HERE (AS A MULTI LINES COMMENT)
 
-
+// The fruit with index 0 is neither apple or orange.
+// The fruit with index 1 is and orange
+// The fruit with index 2 is neither apple or orange.
+// The fruit with index 3 is an apple
 
 ////////// PROBLEM 5 //////////
 
@@ -147,8 +157,8 @@ let foods = [
     Count the total price of foods that have "rice" tag. Please type the result too.
 */
 
-// CODE HERE
-
+const totalPrice = foods.filter(element => element.tags.includes("rice")).reduce((acc, curr) => acc + curr.price, 0) 
+console.log(totalPrice)
 
 // THE TOTAL
-
+//26
