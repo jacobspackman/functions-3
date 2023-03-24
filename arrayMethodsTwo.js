@@ -9,8 +9,8 @@ let numbers = [40, 68, 14, 90, 49];
     Use forEach method to loop though all the elements in the 'numbers' array above, and divide each element (number) by 2. Print the result in console.
 */
 
-numbers.forEach((num, i, arr) => arr[i] = num / 2)
-console.log(numbers)
+numbers.forEach((num, i, arr) => console.log(num / 2))
+
 
 ////////// PROBLEM 2 //////////
 
@@ -22,7 +22,8 @@ console.log(numbers)
     NOTE: make sure you save the code in a variable, then console.log the variable to see the new array.
 */
 
-
+const divideByTwo = numbers.map(num => num /2)
+console.log(divideByTwo)
 
 
 ////////// PROBLEM 3 //////////
@@ -49,7 +50,9 @@ let cities = [
     Make sure you save the code in a variable. Then, console.log the variable to see the new array.
 */
 
-// CODE HERE
+const endWithL = cities.filter(name => {
+  
+})
 
 
 ////////// PROBLEM 4 //////////
