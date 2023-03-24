@@ -9,8 +9,8 @@ let numbers = [40, 68, 14, 90, 49];
     Use forEach method to loop though all the elements in the 'numbers' array above, and divide each element (number) by 2. Print the result in console.
 */
 
-// CODE HERE
-
+numbers.forEach((num, i, arr) => arr[i] = num / 2)
+console.log(numbers)
 
 ////////// PROBLEM 2 //////////
 
@@ -22,7 +22,7 @@ let numbers = [40, 68, 14, 90, 49];
     NOTE: make sure you save the code in a variable, then console.log the variable to see the new array.
 */
 
-// CODE HERE
+
 
 
 ////////// PROBLEM 3 //////////
